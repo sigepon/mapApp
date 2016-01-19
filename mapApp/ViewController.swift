@@ -15,12 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         mapView.showsUserLocation = true
         
         let pin = MKPointAnnotation()
         pin.coordinate = CLLocationCoordinate2DMake(39.703531, 141.152667)
-//        pin.title = name
         mapView.addAnnotation(pin)
     }
 
